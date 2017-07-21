@@ -8,6 +8,8 @@ object Dependencies {
 
   object Versions {
     val ammonite = "1.0.1"
+    val ammonite = "1.0.0"
+    val avatica = "1.10.0"
     val config = "1.2.1"
     val fastparse = "0.4.4"
     val log4j = "1.2.16"
@@ -25,6 +27,10 @@ object Dependencies {
 
   val ammonite = Seq(
     "com.lihaoyi" % s"ammonite_${Versions.scala}" % Versions.ammonite
+  )
+
+  val avatica = Seq(
+    "org.apache.calcite.avatica" % "avatica" % Versions.avatica
   )
 
   val fastparse = Seq(
